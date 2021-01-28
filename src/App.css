@@ -8,8 +8,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .growing-wine {
+    animation: growAndSpin 3s infinite alternate-reverse;
   }
 }
 
@@ -24,15 +24,35 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.page-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ececec;
 }
 
-@keyframes App-logo-spin {
+.page-section .image {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@keyframes growAndSpin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(.8);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(90deg) scale(1.75);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
