@@ -6,16 +6,23 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Josh by Joseph Carr Wine</h1>
-        <p>Josh wines is named after Joseph's dad. His dad's name was Joseph, but his friends called him Josh.</p>
+        <p>
+          Josh wines is named after Joseph's dad. His dad's name was Joseph, but
+          his friends called him Josh.
+        </p>
         <span className="growing-wine">🍷</span>
       </header>
       <section className="content">
         <div className="page-section">
-          <p>This Cabernet is a classic! In the beginning, he only made one wine, Cabernet Sauvignon, but soon thereafter began making a Josh Chardonnay for his wife, Dee.</p>
+          <p>
+            This Cabernet is a classic! In the beginning, he only made one wine,
+            Cabernet Sauvignon, but soon thereafter began making a Josh
+            Chardonnay for his wife, Dee.
+          </p>
           <Image
             className="image"
             src="https://i.ibb.co/2v97GNd/josh-wine.jpg"
-            alt="Josh Wines Cabernet Sauvignon" 
+            alt="Josh Wines Cabernet Sauvignon"
             border="0"
           />
         </div>
@@ -38,6 +45,21 @@ function App() {
             alt="joshbyjosephlabel"
             border="0"
           />
+        </div>
+        <div className="page-section">
+          <h3>Oh my Josh!</h3>
+          <div>
+            <div className="iframe-container">
+              <iframe
+                className="iframe"
+                src="https://www.youtube.com/embed/HlgY4XETGUE"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
     </div>
